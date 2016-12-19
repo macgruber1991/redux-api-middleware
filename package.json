@@ -1,5 +1,5 @@
 {
-  "name": "redux-api-middleware",
+  "name": "@macgruber1991/redux-api-middleware",
   "version": "1.0.2",
   "description": "Redux middleware for calling an API.",
   "main": "lib/index.js",
