@@ -10,10 +10,6 @@ import isPlainObject from 'lodash.isplainobject';
  * @returns {boolean}
  */
 function isRSAA(action) {
-  console.log('action '+ JSON.stringify(action));
-  console.log('isPlainObject '+isPlainObject(action));
-  console.log('hasOwnProperty '+action.hasOwnProperty(CALL_API));
-  console.log('CALL_API '+ CALL_API);
   return isPlainObject(action) && action.hasOwnProperty(CALL_API);
 }
 
@@ -90,9 +86,6 @@ function validateRSAA(action) {
   }
 
   for (let key in action) {
-    console.log('key: '+ key + 'CALL_API arr : '+ [CALL_API]);
-    console.log('with arr '+ key !== [CALL_API] );
-    console.log('without arr '+ key !== CALL_API );
     if (key != [CALL_API]) {
       validationErrors.push(`Invalid root key: ${key}`);
     }
