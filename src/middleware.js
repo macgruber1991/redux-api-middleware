@@ -19,7 +19,6 @@ function apiMiddleware({ getState }) {
     if (!isRSAA(action)) {
       return next(action);
     }
-    console.log(action);
     // Try to dispatch an error request FSA for invalid RSAAs
     const validationErrors = validateRSAA(action);
     if (validationErrors.length) {

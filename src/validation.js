@@ -10,6 +10,8 @@ import isPlainObject from 'lodash.isplainobject';
  * @returns {boolean}
  */
 function isRSAA(action) {
+  console.log(isPlainObject(action));
+  console.log(action.hasOwnProperty(CALL_API));
   return isPlainObject(action) && action.hasOwnProperty(CALL_API);
 }
 
