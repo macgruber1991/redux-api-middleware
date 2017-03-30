@@ -93,7 +93,7 @@ function validateRSAA(action) {
     console.log('key: '+ key + 'CALL_API arr : '+ [CALL_API]);
     console.log('with arr '+ key !== [CALL_API] );
     console.log('without arr '+ key !== CALL_API );
-    if (key !== [CALL_API]) {
+    if (key != [CALL_API]) {
       validationErrors.push(`Invalid root key: ${key}`);
     }
   }
