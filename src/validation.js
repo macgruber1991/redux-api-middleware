@@ -14,7 +14,7 @@ function isRSAA(action) {
   console.log('isPlainObject '+isPlainObject(action));
   console.log('hasOwnProperty '+action.hasOwnProperty(CALL_API));
   console.log('CALL_API '+ CALL_API);
-  return isPlainObject(action) && action.hasOwnProperty(CALL_API);
+  return isPlainObject(action);
 }
 
 /**
