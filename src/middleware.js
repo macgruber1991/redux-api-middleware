@@ -1,4 +1,4 @@
-import fetch from 'fetch-everywhere';
+// import fetch from 'fetch-everywhere';
 import isPlainObject from 'lodash.isplainobject';
 
 import CALL_API from './CALL_API';
